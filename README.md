@@ -1,11 +1,11 @@
-About openmetadata-managed-apis
-===============================
+About openmetadata-managed-apis-feedstock
+=========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmetadata-managed-apis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://open-metadata.org/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmetadata-managed-apis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Airflow REST APIs to create and manage DAGS
 
