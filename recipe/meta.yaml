@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://open-metadata.org/
-  summary: Airflow REST APIs to create and manage DAGS
+  summary: Airflow REST APIs to create and manage DAGS.
   dev_url: https://github.com/open-metadata/OpenMetadata
   license: Apache-2.0
   license_file: LICENSE
