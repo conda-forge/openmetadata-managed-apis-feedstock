@@ -22,7 +22,7 @@ requirements:
     - python >=3.7
     - apache-airflow >=2.2.2
     - flask >=1.1.4
-    - pendulum >=2.1.2,<2.2.0
+    - pendulum >=2.1.2
     - flask-admin ==1.6.0
 
 test:
