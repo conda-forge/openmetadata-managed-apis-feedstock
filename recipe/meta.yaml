@@ -1,5 +1,5 @@
 {% set name = "openmetadata-managed-apis" %}
-{% set version = "0.13.3.1" %}
+{% set version = "1.0.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openmetadata_managed_apis-{{ version }}.tar.gz
-  sha256: 95d3b2b4a16139fcc9eeb21cf2fdf706cdb7d26566fb0a1e0897d0a2bdcb2a3f
+  sha256: 14ff022faa9f32c97f20ffda58f08276d62c2e0eef4b9e7a7dfa9d052efb64ea
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - flask >=1.1.4
     - pendulum >=2.1.2
     - flask-admin ==1.6.0
+    - werkzeug <2.3,>=1.0
 
 test:
   imports:
