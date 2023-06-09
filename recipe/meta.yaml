@@ -1,5 +1,5 @@
 {% set name = "openmetadata-managed-apis" %}
-{% set version = "1.0.3.0" %}
+{% set version = "1.0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openmetadata_managed_apis-{{ version }}.tar.gz
-  sha256: 5da743f1b2cde919a16d075644bdcb99a3a9145feb13917defe621c3fc1c957c
+  sha256: 2d14ea0f729c759abebfea52906942ec9a7db704d2233668606f8c064d465c64
 
 build:
   noarch: python
@@ -25,6 +25,8 @@ requirements:
     - flask >=1.1.4
     - apache-airflow >=2.2.2
     - werkzeug >=1.0,<2.3
+    #- rich 13.2.0 has requirement markdown-it-py<3.0.0,>=2.1.0, but you have markdown-it-py 3.0.0.
+    - markdown-it-py >=2.1,<3.0.0
 
 test:
   imports:
