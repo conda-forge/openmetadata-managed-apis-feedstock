@@ -24,9 +24,6 @@ requirements:
     - flask-admin ==1.6.0
     - apache-airflow >=2.2.2
     - pendulum >=2.1.2,<2.2.0
-    #- werkzeug >=1.0,<2.4
-    #- rich 13.2.0 has requirement markdown-it-py<3.0.0,>=2.1.0, but you have markdown-it-py 3.0.0.
-    #- markdown-it-py >=2.1,<4.0.0
 
 test:
   imports:
