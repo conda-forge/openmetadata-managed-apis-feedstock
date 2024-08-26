@@ -11,19 +11,20 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python >=3.8
+    - setuptools >=70.3.0
     - pip
   run:
     - python >=3.8
-    - flask >=1.1.4
-    - flask-admin ==1.6.0
+    - pendulum >=3.0,<4.0
     - apache-airflow >=2.2.2
-    - pendulum >=2.1.2,<2.2.0
+    - flask ==2.2.5
+    - flask-admin ==1.6.0
 
 test:
   imports:
