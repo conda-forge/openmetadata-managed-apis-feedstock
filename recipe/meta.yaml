@@ -1,5 +1,5 @@
 {% set name = "openmetadata-managed-apis" %}
-{% set version = "1.7.0.1" %}
+{% set version = "1.7.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openmetadata_managed_apis-{{ version }}.tar.gz
-  sha256: 4d8ba149673808badc2db01d1be4fcedc4ec8c74d6ca43410d3fd6d6a4c25104
+  sha256: 322a05b77bfc404586ba8bf49203ed325a5bc391251f6dfc5975f568ecc5a207
 
 build:
   noarch: python
