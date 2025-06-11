@@ -25,6 +25,7 @@ requirements:
     - apache-airflow >=2.2.2
     - flask ==2.2.5
     - flask-admin ==1.6.0
+    - apache-airflow-core >=3.0.2,<3.1.0
 
 test:
   imports:
