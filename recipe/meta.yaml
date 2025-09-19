@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=70.3.0
+    - setuptools >=70.3.0,<70.4.dev0
     - pip
   run:
     - python >={{ python_min }}
@@ -26,6 +26,7 @@ requirements:
     - flask ==2.2.5
     - flask-admin ==1.6.0
     - apache-airflow-core >=3.0.2,<3.1.0
+    # Pip Check Error cryptography 46.0.1 has requirement cffi>=2.0.0; python_full_version >= "3.9" and platform_python_implementation != "PyPy", but you have cffi 1.17.1.
 
 test:
   imports:
