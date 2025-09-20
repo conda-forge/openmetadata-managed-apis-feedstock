@@ -1,5 +1,5 @@
 {% set name = "openmetadata-managed-apis" %}
-{% set version = "1.9.8.0" %}
+{% set version = "1.9.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openmetadata_managed_apis-{{ version }}.tar.gz
-  sha256: e97d9d5dc47bcb86a2aa08c5509756cec739fc3d9459ff3f7121ed4bedc6f912
+  sha256: 1cddb5be62734792017de87a5115a2578ed0b5d770a3a79a3381aeb57e75b2dc
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=70.3.0
+    - setuptools >=70.3.0,<70.4.dev0
     - pip
   run:
     - python >={{ python_min }}
@@ -26,6 +26,7 @@ requirements:
     - flask ==2.2.5
     - flask-admin ==1.6.0
     - apache-airflow-core >=3.0.2,<3.1.0
+    # Pip Check Error cryptography 46.0.1 has requirement cffi>=2.0.0; python_full_version >= "3.9" and platform_python_implementation != "PyPy", but you have cffi 1.17.1.
 
 test:
   imports:
