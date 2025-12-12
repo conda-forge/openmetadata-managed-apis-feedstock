@@ -1,5 +1,5 @@
 {% set name = "openmetadata-managed-apis" %}
-{% set version = "1.10.12.0" %}
+{% set version = "1.11.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openmetadata_managed_apis-{{ version }}.tar.gz
-  sha256: ad7f190afb6d95bbcc2be99877151eb8dd553d7198b170dfe98cd98f998095b6
+  sha256: 5648a72ada9313b4a97cc15806b7c3741b5ade6677cc5bed31ba5e249f96b62d
 
 build:
   noarch: python
@@ -20,6 +20,8 @@ requirements:
     - setuptools >=70.3.0,<70.4.dev0
     - pip
   run:
+    - apache-airflow-providers-fab >=1.0.0
+    - packaging >=20.0
     - python >={{ python_min }}
     - pendulum >=3.0,<4.dev0
     - apache-airflow >=2.2.2
